@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Lost in Space</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://baronwatts.com/scripts/modifier.js"></script>
+        <script src="https://cdn.rawgit.com/schteppe/cannon.js/master/build/cannon.js"></script>
+    </head>
+    <body>
+		<div class="game-holder" id="gameHolder">
+			<div class="header">
+				<h1>Lost in Space</h1>
+				<h2>find your way home</h2>
+				<div class="score" id="score">
+					<div class="score__content" id="level">
+						<div class="score__label">level</div>
+						<div class="score__value score__value--level" id="levelValue">1</div>
+						<svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+							<circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#e5e3f9" stroke-width="24px" />
+							<circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+						</svg>
+					</div>
+					<!-- <div class="score__content" id="energy">
+						<div class="score__label">energy</div>
+						<div class="score__value score__value--energy" id="energyValue">
+							<div class="energy-bar" id="energyBar"></div>
+						</div>
+					</div> -->
+                    <div class="score__content" id="oxygen">
+						<div class="score__label">oxygen</div>
+						<div class="score__value score__value--oxygen" id="energyValue">
+							<div class="oxygen-bar" id="oxygenBar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="world" id="world"></div>
+			<div class="message message--replay" id="replayMessage">Click to Replay</div>
+			<div class="message message--instructions" id="instructions">Collect the starbits<span>Be quick, you're running out of oxygen</span></div>
+		</div> 
+        <!-- <canvas class="webgl"></canvas> -->
+        <script src="./main.js" type="module">
+        </script>
+    </body>
+</html>
