@@ -436,7 +436,7 @@ const loader = new GLTFLoader();
 let mixers = [];
 var mixer = null;
 var clip1, clip2;
-loader.load('/astronaut.glb', function (object) {
+loader.load('https://raw.githubusercontent.com/baronwatts/models/master/astronaut.glb', function (object) {
   object.scene.traverse(function (node) {
     if (node instanceof THREE.Mesh) {
       node.castShadow = true;
